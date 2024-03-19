@@ -5,6 +5,7 @@
 #include <QCameraInfo>
 #include <QCameraViewfinder>
 #include <QDebug>
+#include <QPushButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,5 +23,7 @@ private:
     Ui::MainWindow *ui;
     QCamera *m_camera;
     QCameraViewfinder *m_viewFinder;
+    QPushButton *startBtn;
+    QPushButton *stopBtn;
 };
 #endif // MAINWINDOW_H
